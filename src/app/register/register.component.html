@@ -1,0 +1,110 @@
+<!-- <div class="content">
+    <div class="title" id="title1">
+      <div>Registeration </div>
+    </div>
+    <div id="presentation">
+      <div id="presentation-tag">
+        <div id="presentation-text">
+            <div id="intro"> Registration Form </div>
+            <form class="form-wrapper">
+                  <input type="text" name="name" id="name" placeholder="Name"><br>
+                  <input type="text" name="email" id="email" placeholder="Email"><br>
+                  <input type="text" name="name" id="name" placeholder="Name"><br>
+                  <input type="text" name="email" id="email" placeholder="Email"><br>
+                  <input type="text" name="name" id="name" placeholder="Name"><br>
+                  <input type="text" name="email" id="email" placeholder="Email"><br>
+                  <div class="button">Next</div>
+            </form>
+          <ul>
+            <li class="CV">Former publisher apprentice.</li>
+            <li class="CV">Current content manager at a software editor's.</li>
+            <li class="CV">Future developper?</li>
+          </ul>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+<div class="box" id="box">
+    <a id="reg"></a>
+    <h2>Student Registration</h2>
+    <form [formGroup]="myform" (ngSubmit)="onSubmit()">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h3>Enter the Details</h3>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="name">Student Name</label></td>
+                <td><input type="text" formControlName="sname" required></td>
+                <td> 
+                    <div *ngIf="myform.controls['sname'].invalid && myform.controls['sname'].touched"
+                        class="error">
+                        <div *ngIf="myform.controls['sname'].errors?.required">
+                            Required Field
+                        </div>
+                        <div *ngIf="myform.controls['sname'].errors?.pattern">
+                            Only letters
+                        </div>
+                    </div>
+                </td>
+                    
+                
+            </tr>
+            <tr>
+                <td><label for="sroll">Student Roll</label></td>
+                <td><input type="text" formControlName="sroll" required></td>
+                <td><div *ngIf="myform.controls['sroll'].invalid && myform.controls['sroll'].touched"
+                    class="error">
+                    <div *ngIf="myform.controls['sroll'].errors?.required">
+                        Required Field
+                    </div>
+                    
+                </div></td>
+            </tr>
+            <tr>
+                <td><label for="dpt">Department</label></td>
+                <td><input type="text" formControlName="dpt" required></td>
+                <td><div *ngIf="myform.controls['dpt'].invalid && myform.controls['dpt'].touched"
+                        class="error">
+                        <div *ngIf="myform.controls['dpt'].errors?.required">
+                            Required Field
+                        </div>
+                    </div></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" formControlName="email" required></td>
+                <td><div *ngIf="myform.controls['email'].invalid && myform.controls['email'].touched"
+                        class="error">
+                        <div *ngIf="myform.controls['email'].errors?.required">
+                            Required Field
+                        </div>
+                        <div *ngIf="myform.controls['email'].errors?.email">
+                            Invalid Email Format
+                        </div>
+                    </div></td>
+            </tr>
+
+            <tr>
+                <td><label for="phno">Phone Number</label></td>
+                <td><input type="text" formControlName="phno" required></td>
+                <td><div *ngIf="myform.controls['phno'].invalid && myform.controls['phno'].touched"
+                        class="error">
+                        <div *ngIf="myform.controls['phno'].errors?.required">
+                            Required Field
+                        </div>
+                        <div *ngIf="myform.controls['phno'].errors?.pattern">
+                            Must have numeric
+                        </div>
+                    </div></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+
+      
+    <div class="box" id="box">
+        
+        <h2>View Registered Students</h2>
+        
+        
+<button (click)="onSubmit()">View</button>
+
+        
+        <table border="2" *ngIf=flag>
+            <tr>
+                <th>Student Name</th>
+                <th>Student Roll</th>
+                <th>Department</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr *ngFor="let d of data | async">
+                <th>{{d.sname}}</th>
+                <th>{{d.sroll}}</th>
+                <th>{{d.dpt}}</th>
+                <th>{{d.email}}</th>
+                <th>{{d.phno}}</th>
+            </tr>
+            
+        </table>
+
+    </div>
