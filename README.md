@@ -1,3 +1,19 @@
+# Angular Training
+Project done as part of the training 
+
+# Instructions for running the server
+
+Demo server is setup using json-server
+
+## Installation:
+npm install -g json-server  
+
+## Comand for starting server
+
+json-server --watch new.json
+
+
+
 # ProjectAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
