@@ -104,6 +104,17 @@ body {
   .course input{
       margin-left: 0;
   }
+  /* .box input[type=text]{
+    text-align: center;
+    width: 110px;
+    height: 45px;
+    color: blanchedalmond;
+    background-color: #006666;
+    border-radius: 7px;
+    margin-left: 400px;
+    margin-top: 40px;
+} */
+
   .box input[type=submit]{
       text-align: center;
       width: 110px;
@@ -121,6 +132,35 @@ body {
       background-color: #3b4444;
   
   }
+  .box input[type=button]{
+    text-align: center;
+    width: 110px;
+    height: 45px;
+    color: blanchedalmond;
+    background-color: #f10101;
+    border-radius: 7px;
+    margin-left: 400px;
+    margin-top: 40px;
+}
+.box input[type=button]:hover{
+    width: 115px;
+    height: 49px;
+    color: blanchedalmond;
+    background-color: #3b4444;
+
+}
+button{
+    text-align: center;
+    width: 110px;
+    height: 45px;
+    color: blanchedalmond;
+    background-color: #006666;
+    border-radius: 7px;
+    margin-left: 400px;
+    margin-top: 40px;
+}
+
+  
   .box form{
       border:  black 5px;
   }
@@ -139,3 +179,21 @@ body {
   
   }
   
+  input.ng-invalid{
+      border: 1px solid red;
+      
+  }
+
+  input.ng-valid{
+    border: 2px solid green;
+}
+
+.error{
+    color: red;
+}
+.errorbtn{
+    color: red;
+}
+
+
+

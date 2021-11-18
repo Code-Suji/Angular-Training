@@ -8,7 +8,8 @@
 <button (click)="onSubmit()">View</button>
 
         
-        <table border="2" *ngIf=flag>
+        <table *ngIf=flag>
+            <thead>
             <tr>
                 <th>Student Name</th>
                 <th>Student Roll</th>
@@ -16,13 +17,16 @@
                 <th>Email</th>
                 <th>Phone Number</th>
             </tr>
+        </thead>
+            <tbody>
             <tr *ngFor="let d of data | async">
-                <th>{{d.sname}}</th>
-                <th>{{d.sroll}}</th>
-                <th>{{d.dpt}}</th>
-                <th>{{d.email}}</th>
-                <th>{{d.phno}}</th>
+                <td>{{d.sname}}</td>
+                <td>{{d.sroll}}</td>
+                <td>{{d.dpt}}</td>
+                <td>{{d.email}}</td>
+                <td>{{d.phno}}</td>
             </tr>
+        </tbody>
             
         </table>
 

@@ -1,84 +1,28 @@
 {
   "students": [
     {
-      "id": 1,
       "sname": "Sujith",
-      "sroll": 20,
+      "sroll": "20",
       "dpt": "CSE",
-      "email": "sujith@gmail.com",
-      "phno": "9207773141"
+      "email": "sujith@gmail",
+      "phno": "1234567890",
+      "id": 1
     },
     {
-      "id": 2,
-      "sname": "Sujith1",
-      "sroll": 20,
-      "dpt": "CSE",
-      "email": "sujith@gmail.com",
-      "phno": "9207773141"
+      "sname": "New Student",
+      "sroll": "12",
+      "dpt": "EEE",
+      "email": "newmail@nw",
+      "phno": "3434243231",
+      "id": 2
     },
     {
-      "sname": "Sujith1",
-      "sroll": 20,
-      "dpt": "CSE",
-      "email": "sujith@gmail.com",
-      "phno": "9207773141",
+      "sname": "Sujith",
+      "sroll": "2",
+      "dpt": "as",
+      "email": "wwww@ddd",
+      "phno": "1223213123",
       "id": 3
-    },
-    {
-      "sname": "New",
-      "sroll": "New",
-      "dpt": "new",
-      "email": "new",
-      "phno": "new",
-      "id": 4
-    },
-    {
-      "sname": "new1",
-      "sroll": "new1",
-      "dpt": "new1",
-      "email": "new1",
-      "phno": "new2",
-      "id": 5
-    },
-    {
-      "sname": "new1",
-      "sroll": "new2",
-      "dpt": "new3",
-      "email": "new4",
-      "phno": "new5",
-      "id": 6
-    },
-    {
-      "sname": "1",
-      "sroll": "2",
-      "dpt": "3",
-      "email": "5",
-      "phno": "6",
-      "id": 7
-    },
-    {
-      "sname": "1",
-      "sroll": "2",
-      "dpt": "3",
-      "email": "5",
-      "phno": "6",
-      "id": 8
-    },
-    {
-      "sname": "Sujith123",
-      "sroll": "wsdf",
-      "dpt": "dfg",
-      "email": "fg",
-      "phno": "fg",
-      "id": 9
-    },
-    {
-      "sname": "Sujith",
-      "sroll": "122",
-      "dpt": "CSE",
-      "email": "sdd@qwe",
-      "phno": "12",
-      "id": 10
     }
   ]
 }

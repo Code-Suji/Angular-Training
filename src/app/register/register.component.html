@@ -1,32 +1,3 @@
-<!-- <div class="content">
-    <div class="title" id="title1">
-      <div>Registeration </div>
-    </div>
-    <div id="presentation">
-      <div id="presentation-tag">
-        <div id="presentation-text">
-            <div id="intro"> Registration Form </div>
-            <form class="form-wrapper">
-                  <input type="text" name="name" id="name" placeholder="Name"><br>
-                  <input type="text" name="email" id="email" placeholder="Email"><br>
-                  <input type="text" name="name" id="name" placeholder="Name"><br>
-                  <input type="text" name="email" id="email" placeholder="Email"><br>
-                  <input type="text" name="name" id="name" placeholder="Name"><br>
-                  <input type="text" name="email" id="email" placeholder="Email"><br>
-                  <div class="button">Next</div>
-            </form>
-          <ul>
-            <li class="CV">Former publisher apprentice.</li>
-            <li class="CV">Current content manager at a software editor's.</li>
-            <li class="CV">Future developper?</li>
-          </ul>
-        </div>
-    </div>
-</div> -->
-
-
-
-
 <div class="box" id="box">
     <a id="reg"></a>
     <h2>Student Registration</h2>
@@ -39,7 +10,7 @@
             </tr>
             <tr>
                 <td><label for="name">Student Name</label></td>
-                <td><input type="text" formControlName="sname" required></td>
+                <td ><input type="text" formControlName="sname" required></td>
                 <td> 
                     <div *ngIf="myform.controls['sname'].invalid && myform.controls['sname'].touched"
                         class="error">
@@ -59,8 +30,11 @@
                 <td><input type="text" formControlName="sroll" required></td>
                 <td><div *ngIf="myform.controls['sroll'].invalid && myform.controls['sroll'].touched"
                     class="error">
-                    <div *ngIf="myform.controls['sroll'].errors?.required">
+                    <div  *ngIf="myform.controls['sroll'].errors?.required">
                         Required Field
+                    </div>
+                    <div *ngIf="myform.controls['sroll'].errors?.pattern">
+                        Only Numbers
                     </div>
                     
                 </div></td>
@@ -77,7 +51,7 @@
             </tr>
             <tr>
                 <td><label for="email">Email</label></td>
-                <td><input type="email" formControlName="email" required></td>
+                <td><input type="text" formControlName="email" required></td>
                 <td><div *ngIf="myform.controls['email'].invalid && myform.controls['email'].touched"
                         class="error">
                         <div *ngIf="myform.controls['email'].errors?.required">
@@ -98,12 +72,15 @@
                             Required Field
                         </div>
                         <div *ngIf="myform.controls['phno'].errors?.pattern">
-                            Must have numeric
+                            Only Numbers
                         </div>
                     </div></td>
             </tr>
             <tr>
-                <td colspan="2"><input type="submit" value="Submit"></td>
+                <td colspan="2" *ngIf="!myform.valid" ><input class="errbtn" type="button" value="Disabled" ></td>
+                <td colspan="2" *ngIf="myform.valid"><input type="submit" value="Submit"  ></td>
+                <td colspan="2"><div *ngIf="!myform.valid" class="errorbtn"> Can't Submit (Invalid Datas provided!)</div></td>
+                
             </tr>
         </table>
     </form>

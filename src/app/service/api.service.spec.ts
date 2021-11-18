@@ -1,16 +1,60 @@
-import { TestBed } from '@angular/core/testing';
+// import {
+//   HttpTestingController,
+//   HttpClientTestingModule,
+// } from '@angular/common/http/testing';
 
-import { ApiService } from './api.service';
+// import { TestBed, inject } from '@angular/core/testing';
+// import { IData } from '../register/data';
 
-describe('ApiService', () => {
-  let service: ApiService;
+// import { ApiService } from './api.service';
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(ApiService);
-  });
+// describe('ApiService', () => {
+//   let apiservice: ApiService;
+//   let httpMock: HttpTestingController;
+//   let baseUrl = 'http://localhost:3000/students';
+//   let data:any;
+//   let resultmock:any;
+//   beforeEach(() => {
+//     TestBed.configureTestingModule({
+//       imports: [HttpClientTestingModule],
+//     });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+//     httpMock = TestBed.get(HttpTestingController);
+//     resultmock = {
+//       sname: 'test',
+//       sroll: 'test',
+//       dpt: 'test',
+//       email: 'test',
+//       phno: 'test',
+//     };
+//   });
+
+//   beforeEach(inject(
+//     [ApiService],
+//     (service: ApiService) => {
+//       apiservice = service;
+//     }
+//   ));
+
+//   it("should return data", () => {
+//     data = {
+//       sname: 'test',
+//       sroll: 'test',
+//       dpt: 'test',
+//       email: 'test',
+//       phno: 'test',
+//     };
+//     let result: any;
+//     result = apiservice.getData()
+//     const req = httpMock.expectOne({
+//       method: "GET",
+//       url: baseUrl
+//     });
+   
+//     req.flush([data]);
+   
+//     expect(resultmock).toEqual(data);
+//   });
+
+// });
+

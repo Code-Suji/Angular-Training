@@ -17,12 +17,12 @@ export class ApiService {
 
   constructor(private httpClient:HttpClient){}
 
-  create(emp:IData){
-    this.httpClient.post<IData>(this.url,JSON.stringify(emp)).subscribe(
-      data => console.log("success!", data),
-      error => console.error("couldn't post because", error)
-  );
-  }
+  // create(emp:IData){
+  //   this.httpClient.post<IData>(this.url,JSON.stringify(emp)).subscribe(
+  //     data => console.log("success!", data),
+  //     error => console.error("couldn't post because", error)
+  // );
+  // }
 
   createUser(user: any): Observable<Object> {
     return this.httpClient.post(`${this.url}`, user);
