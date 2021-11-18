@@ -6,11 +6,11 @@ Project done as part of the training
 Demo server is setup using json-server
 
 ## Installation:
-npm install -g json-server  
+`npm install -g json-server ` 
 
 ## Comand for starting server
 
-json-server --watch new.json
+`json-server --watch new.json`
 
 
 
